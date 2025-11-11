@@ -1,0 +1,8 @@
+accelerate==0.31.0
+protobuf==3.20.3
+sentence-transformers==2.7.0
+tokenizers==0.20.3
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+transformers==4.46.0
