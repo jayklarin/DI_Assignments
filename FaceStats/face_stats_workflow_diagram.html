@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { font-family: Arial, sans-serif; background: #f5f7fa; padding: 20px; }
+  .title { font-size: 28px; font-weight: 800; color: #333; text-align: center; margin-bottom: 30px; }
+  .step {
+    background: white;
+    border-radius: 14px;
+    padding: 18px;
+    margin: 18px auto;
+    width: 85%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-left: 12px solid;
+  }
+  .s1 { border-color: #4a90e2; }
+  .s2 { border-color: #50c878; }
+  .s3 { border-color: #a55eea; }
+  .s4 { border-color: #ff9f43; }
+  .s5 { border-color: #ff6b6b; }
+  .s6 { border-color: #1dd1a1; }
+  .s7 { border-color: #576574; }
+  .step-title { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+  .arrow { text-align: center; font-size: 28px; margin: 10px 0; color: #666; }
+</style>
+</head>
+<body>
+
+<div class="title">Face Stats — End‑to‑End Workflow Diagram</div>
+
+<div class="step s1">
+  <div class="step-title">1. Dataset Acquisition</div>
+  Synthetic faces • Generated images • Curated datasets → saved in <b>dataset_raw/</b>
+</div>
+<div class="arrow">⬇</div>
+
+<div class="step s2">
+  <div class="step-title">2. Preprocessing (fs01_preprocess_all.py + fs01_preprocessing.ipynb)</div>
+  Face detection • Landmarks • Alignment • Pose • Cropping • Filtering • Metadata JSON → <b>dataset_preprocessed/</b>
+</div>
+<div class="arrow">⬇</div>
+
+<div class="step s3">
+  <div class="step-title">3. Embeddings & Feature Extraction (fs02 + fs03)</div>
+  CLIP/InsightFace embeddings • FAISS index • Symmetry • Golden ratio • Skin texture • Ratios → <b>embeddings/</b>
+</div>
+<div class="arrow">⬇</div>
+
+<div class="step s4">
+  <div class="step-title">4. Attractiveness Modeling (fs04_attractiveness_model.ipynb)</div>
+  Hybrid scoring • Normalization to 1–10 scale • Feature weighting → <b>scores + stats</b>
+</div>
+<div class="arrow">⬇</div>
+
+<div class="step s5">
+  <div class="step-title">5. Inference & Compositing (fs05 + fs06)</div>
+  Filters (score/gender/age/ethnicity) • Mean face • Weighted composite • PCA reconstruction → <b>composites/</b>
+</div>
+<div class="arrow">⬇</div>
+
+<div class="step s6">
+  <div class="step-title">6. Analysis & Visualization</div>
+  Distributions • PCA plots • Group comparisons • Outlier detection → <b>analysis notebooks</b>
+</div>
+<div class="arrow">⬇</div>
+
+<div class="step s7">
+  <div class="step-title">7. Presentation Layer</div>
+  Streamlit UI • Gallery • Dashboards • Composite generator • GitHub documentation
+</div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+# System
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# FaceStats large data (never commit)
+FaceStats/dataset_raw/
+FaceStats/dataset_preprocessed/
+FaceStats/dataset_filtered/
+FaceStats/dataset_metadata/
+FaceStats/segmentations/
+FaceStats/landmarks/
+FaceStats/embeddings/
+FaceStats/logs/
+FaceStats/composites/
+FaceStats/features_clip_vit4h/
+FaceStats/features_clip_vit4h32/
+
+# Models (these files are huge)
+FaceStats/models/
+dc_w08_d4_embedding_gan/models/
+dc_w09_d2_llama_gemma_kaggle/models/
+
+# LLAMA repo inside your repo (must ignore)
+dc_w09_d2_llama_gemma_kaggle/llama.cpp/
+
+# Any gguf or safetensors (too large)
+*.gguf
+*.safetensors
+
+# Anything over ~10MB
+*.bin
+*.pt
+*.pth
+*.ckpt

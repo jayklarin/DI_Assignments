@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { font-family: Arial, sans-serif; background: #f5f7fa; padding: 20px; }
+  .box {
+    border-radius: 12px;
+    padding: 16px;
+    margin: 20px auto;
+    width: 85%;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  .title { font-size: 28px; font-weight: 800; color: #333; text-align: center; margin-bottom: 30px; }
+  .layer-title { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+
+  .data     { background: linear-gradient(135deg, #4a90e2, #357ABD); }
+  .pre      { background: linear-gradient(135deg, #50c878, #3da766); }
+  .embed    { background: linear-gradient(135deg, #a55eea, #7c3aed); }
+  .analysis { background: linear-gradient(135deg, #ff9f43, #ff7f00); }
+  .comp     { background: linear-gradient(135deg, #ff6b6b, #ee5253); }
+  .ui       { background: linear-gradient(135deg, #1dd1a1, #10ac84); }
+  .director { background: linear-gradient(135deg, #576574, #2f3542); }
+
+</style>
+</head>
+<body>
+
+<div class="title">Face Stats — Full Color Project Architecture Diagram</div>
+
+<div class="box data">
+  <div class="layer-title">DATA SOURCES</div>
+  Synthetic Faces • Generated Images • Curated Datasets
+</div>
+
+<div class="box pre">
+  <div class="layer-title">PREPROCESSING (fs01_preprocess_all.py + fs01_preprocessing.ipynb)</div>
+  Face Detection • Landmark Extraction • Pose Estimation • Alignment • Cropping • Filtering • Metadata JSON
+</div>
+
+<div class="box embed">
+  <div class="layer-title">EMBEDDINGS & FEATURES (fs02_feature_extractipn.ipynb + fs03_embedding_extraction.ipynb)</div>
+  CLIP / InsightFace Embeddings • FAISS Index • Symmetry • Golden Ratio • Skin Evenness • 1–10 Attractiveness Score
+</div>
+
+<div class="box analysis">
+  <div class="layer-title">ATTRACTIVENESS MODELING (fs04_attractiveness_model.ipynb)</div>
+  Distributions • PCA • Clusters • Outliers • Feature Correlations • Group Comparisons
+</div>
+
+<div class="box comp">
+  <div class="layer-title">INFERENCE & COMPOSITING (fs05_attractiveness_inference.ipynb + fs06_face_composites.ipynb)</div>
+  Pixel-wise Mean • Embedding Weighted • PCA Reconstructions • Filters: Score / Gender / Age / Ethnicity
+</div>
+
+<div class="box ui">
+  <div class="layer-title">PRESENTATION LAYER</div>
+  Streamlit UI • Gallery • Stats Dashboard • Composite Generator • PCA Explorer
+</div>
+
+<div class="box director">
+  <div class="layer-title">TAB DIRECTOR (ChatGPT Atlas Workflow)</div>
+  Dataset Tab • Preprocessing Tab • Analysis Tab • Compositing Tab • Canvas • GitHub Repository Integration
+</div>
+
+</body>
+</html>
