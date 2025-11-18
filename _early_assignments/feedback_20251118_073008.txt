@@ -1,0 +1,7 @@
+URL: https://github.com/jayklarin/DI_Assignments/blob/main/_early_assignments/dc_w01_d1.py
+Brief justification:
+- correctness: The code accurately implements all the requirements outlined in the chapter content, including input validation, printing first/last characters, building the string character by character, and the bonus shuffling functionality. The code directly addresses and fulfills each step described in the instructions.
+- readability: The code is well-structured and easy to follow, with clear comments explaining each step. Meaningful variable names are used.
+- performance: The code's performance is efficient for the given task. The string building and shuffling operations are performed within reasonable time complexity.
+- security: The code doesn't handle any user input that could be considered unsafe. Therefore, it is secure for the defined task.
+
