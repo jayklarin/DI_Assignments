@@ -1,0 +1,18 @@
+{
+    "id": "SFHQ_pt4_00000001",
+    "raw_path": "/Users/jayklarin/__DI/Repositories/DI_Assignments/FaceStats/dataset_raw/part4_sd21/images/images/SFHQ_pt4_00000001.jpg",
+    "processed_path": "./FaceStats_preprocessed_test/SFHQ_pt4_00000001_processed.png",
+    "pose": {
+        "yaw": 0.24802865087985992,
+        "pitch": -0.14994218200445175,
+        "roll": -2.796947956085205e-05
+    },
+    "crop_box": [
+        85,
+        66,
+        946,
+        1024
+    ],
+    "angle": -0.006461080691833643,
+    "resolution_final": "512x512"
+}
